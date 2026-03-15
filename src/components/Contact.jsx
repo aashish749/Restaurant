@@ -1,11 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
+
 import { FaLocationArrow } from "react-icons/fa";
 import InputComponents from "./InputComponents";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
 import { IoTime } from "react-icons/io5";
+import { FiCheck } from "react-icons/fi";
 
 const Contact = () => {
+  const [contactDialog, setContactDialog] = useState(false);
   return (
     <div className="section mb-17">
       <div className="header">
@@ -87,6 +90,24 @@ const Contact = () => {
           </form>
         </div>
       </div>
+      {contactDialog === true ? (
+        <div className=" fixed h-screen top-0 bg-black w-full z-50 flex justify-center items-center px-5">
+          <div className="container mx-auto max-w-md bg-white flex flex-col gap-3 py-7 px-5 shadow-2xl rounded-2xl  items-center text-center">
+            <div className="flex items-center justify-center bg-green-100 rounded-full text-md w-14 h-14 text-2xl ">
+              <FiCheck></FiCheck>
+            </div>
+            <h3 className="text-2xl">Booking Confirmed!</h3>
+            <p>
+              Your table has been successfully reserved. We look forward to
+              serving you!
+            </p>
+
+            <button className="rounded-xl py-2 w-30 text-xl text-white text-bold bg-primary hover:bg-red-800">
+              Continue
+            </button>
+          </div>
+        </div>
+      ) : null}
     </div>
   );
 };

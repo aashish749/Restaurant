@@ -13,8 +13,8 @@ const Navbar = () => {
     <div
       className={
         navColor === "white"
-          ? "shadow-md sticky  top-0 z-50 bg-white"
-          : "shadow-md sticky top-0 z-50 backdrop-blur-2xl"
+          ? "shadow-md sticky  top-0 z-45 bg-white"
+          : "shadow-md sticky top-0 z-45 backdrop-blur-2xl"
       }
     >
       <div className=" mx-auto px-6 sm:px-8 md:px-12 lg:px-24">

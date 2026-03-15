@@ -13,6 +13,7 @@ const InputComponents = ({ name, inputtype, placeholder, options = [] }) => {
           </label>
           <input
             type="text"
+            required
             placeholder={placeholder}
             className="border-[1.5px] shadow-sm  px-3 py-2 rounded border-black/40 w-full "
           />
@@ -28,6 +29,7 @@ const InputComponents = ({ name, inputtype, placeholder, options = [] }) => {
           </label>
           <input
             type="date"
+            required
             min="2026-03-14"
             className="border-[1.5px] shadow-sm  px-3 py-2 rounded border-black/40 w-full "
           />
@@ -42,6 +44,7 @@ const InputComponents = ({ name, inputtype, placeholder, options = [] }) => {
             {name}
           </label>
           <select
+            required
             name={name}
             id={name}
             className="border-[1.5px] shadow-sm  px-3 py-2 rounded border-black/40 w-full "
@@ -83,6 +86,7 @@ const InputComponents = ({ name, inputtype, placeholder, options = [] }) => {
           </label>
           <input
             type={inputtype}
+            required
             placeholder={placeholder}
             className="border-[1.5px] shadow-sm  px-3 py-2 rounded border-black/40 w-full "
           />
