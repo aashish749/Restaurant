@@ -11,16 +11,16 @@
 * {
   font-family: "Saira", sans-serif !important;
   font-stretch: 75%; /* This makes it skinny like the YT video */
-  letter-spacing: -0.02em; /* Tightens the gaps between letters */
+  /* Tightens the gaps between letters */
 }
 h1,
 h2,
 h3,
 h4 {
   font-family: "Saira", sans-serif !important;
-  font-weight: 900 !important;
+  font-weight: 800 !important;
   /* This is the missing piece: */
   font-stretch: 75%;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.01em;
   line-height: 1.1;
 }
