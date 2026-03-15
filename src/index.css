@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Saira:wdth,wght@75,100..900&display=swap");
+@layer components; /*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
+@theme {
+  --color-primary: #bc2b31;
+  --color-secondary: #f8f5f0;
+  --color-accent: #1e3a8a;
+  --color-dark: #1a1a1a;
+}
+* {
+  font-family: "Saira", sans-serif !important;
+  font-stretch: 75%; /* This makes it skinny like the YT video */
+  letter-spacing: -0.02em; /* Tightens the gaps between letters */
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Saira", sans-serif !important;
+  font-weight: 900 !important;
+  /* This is the missing piece: */
+  font-stretch: 75%;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+}
