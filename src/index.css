@@ -1,5 +1,6 @@
-@import "tailwindcss";
 @import url("https://fonts.googleapis.com/css2?family=Saira:wdth,wght@75,100..900&display=swap");
+@import "tailwindcss";
+
 @layer components; /*! tailwindcss v4.1.13 | MIT License | https://tailwindcss.com */
 @theme {
   --color-primary: #bc2b31;
